@@ -14,7 +14,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '11'
 
 configurations {
 	compileOnly {
@@ -29,9 +29,13 @@ repositories {
 dependencies {
 // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server
 	implementation 'org.springframework.cloud:spring-cloud-config-server:3.1.5'
+	implementation 'org.springframework.cloud:spring-cloud-config-client:3.0.3'
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+//	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	//implementation 'microservice-two-eurica-client-subj'
+
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
