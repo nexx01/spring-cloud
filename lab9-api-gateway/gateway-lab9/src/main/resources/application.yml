@@ -1,0 +1,10 @@
+
+server:
+  port: 8020      # Fix the sentence server to 8020.  This makes it easy to find.
+# Allow thymeleaf template changes to reload:
+spring:
+  thymeleaf:
+    cache: false
+# Zuul-proxied services can be found by calling /services/subject, /services/verb, etc.
+zuul:
+  prefix: /services
