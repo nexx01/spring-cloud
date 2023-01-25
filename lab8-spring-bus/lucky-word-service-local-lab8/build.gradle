@@ -16,15 +16,14 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-client
-//	implementation 'org.springframework.cloud:spring-cloud-config-client:3.0.3'
-// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+	implementation 'org.springframework.cloud:spring-cloud-config-client:3.0.3'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.7.6'
 // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bus-amqp
 //	implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp:3.1.2'
 
 //	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//	implementation('org.springframework.cloud:spring-cloud-starter-bootstrap')
 
 }
 
